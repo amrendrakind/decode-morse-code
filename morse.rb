@@ -19,3 +19,13 @@ end
 
 # decode_word('-- -.--')
 
+def decode_message(message)
+  splited_message = message.split('   ')
+  decoded_sentence = ''
+  splited_message.each do |word|
+    decoded_sentence += "#{decode_word(word)} "
+  end
+  decoded_sentence
+end
+
+puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
