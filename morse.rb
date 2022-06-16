@@ -11,12 +11,11 @@ end
 def decode_word(word)
   splited_word = word.split
   decoded_word = ''
-
   splited_word.each do |char|
     decoded_word += decode_char(char)
   end
-
-  puts decoded_word
+  decoded_word
 end
 
-decode_word('-- -.--')
+# decode_word('-- -.--')
+
